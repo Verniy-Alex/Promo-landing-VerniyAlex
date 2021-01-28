@@ -31,12 +31,56 @@ a{
     margin: 30px auto;
 }
 
-
-
-
-
-
-
+/* Modals */
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.modal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-budy-content{
+    position: absolute;
+    top: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    max-width: 50%;
+    height: auto;
+    padding: 50px;
+    margin: 0 auto;
+    outline: 1px solid #222;
+}
+.modal-button-close{
+    color: rgb(250, 114, 114);
+    cursor: pointer;
+    position: relative;
+    right: 50px;
+    top: -100px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+.modal-button-close i{
+    margin-top: 10px;
+    transition: .2s ease-in-out;
+}
+.modal-button-close i:hover{
+    color: #222;
+}
+.modal-budy-text{
+    font-size: 22px;
+    line-height: 30px;
+    color: #222;
+}
 
 /* Mobile Menu */
 .mobile-menu {
@@ -150,7 +194,10 @@ a{
 /* Navigation */
 
 .navigation-container{
-    background: #222;
+    background: rgba(22, 22, 22, 0.7);
+    backdrop-filter: blur (25px);
+    box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -189,12 +236,11 @@ a{
 
 /* Frong page */
 .front-page-container{
-background: url(../img/pexels-photo-220634.jpeg) no-repeat center;
-background-size: cover;
-background-attachment: fixed;
-width: 100%;
-height: 100vh;
-border-bottom: 2px solid #222;
+    background: url(../img/pexels-photo-220634.jpeg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
 }
 
 .front-page-content{
@@ -443,6 +489,42 @@ border-bottom: 2px solid #222;
     line-height: 31px;
     color: #666;
 }
+.callback-form{
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.callback-input{
+    max-width: 100%;
+    margin-right: 5px;
+    padding: 7px 15px;
+    margin-bottom: 25px;
+}
+.callback-form-text{
+    text-align: center;
+}
+.callback-textarea{
+    width: 400px;
+    height: 120px;
+}
+.callback-button{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.callback-btn{
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 8px 15px;
+    background: #222;
+    border: none;
+    color: #fff;
+    transition: .2s ease-in-out;
+}
+.callback-btn:hover{
+    outline: 1px solid black;
+    color: #222;
+    background: transparent;
+}
 /* Callback text end */
 /* Footer */
 .footer-container{
@@ -522,7 +604,7 @@ border-bottom: 2px solid #222;
     margin-bottom: 20px;
 }
 .project-content-img{
-    width: 600px;
+    max-width: 600px;
 }
 .skills-list{
     text-align: center;
@@ -541,6 +623,11 @@ border-bottom: 2px solid #222;
 
 
 @media screen and (max-width:525px){
+.front-page-container{
+    background: url(../img/pexels-photo-220634.jpeg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .front-page-subtitle{
     font-size: 20px;
     margin: 20px 0

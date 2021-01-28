@@ -13,6 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Verniy CV</title>
+    <style>
+        .modal{
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -63,7 +68,6 @@
                 <p class="front-page-subtitle">Создание качественных продуктов -</p>
                 <p class="front-page-subtitle">Лендинг, сайт визиткa, сайт одностраничник</p>
             </div>
-        </div>
         <!-- Arrow -->
         <div class="arrow-down">
             <a href="#about">
@@ -237,7 +241,19 @@
         <div class="wrapper">
             <div class="callback-text wow animate__animated animate__fadeInUp">
                 Возникло желание познакомиться поближе или уточнить детали?<br>
-                Пишите, звоните и я обязательно отвечу Вам.</div>
+                Пишите, звоните и я обязательно отвечу Вам.
+            </div>
+
+            <form class="callback-form">
+                <input type="text" class="callback-input" placeholder="Ваше имя">
+                <input type="text" class="callback-input" placeholder="Ваш Mail">
+                <div class="callback-form-text">
+                    <textarea name="" id="" class="callback-textarea" placeholder=" Ваше сообщение "></textarea>
+                </div>
+            </form> 
+            <div class="callback-button">
+                <button type="button" class="callback-btn" id="callback-btn">Отправить</button>
+            </div>
         </div>
     </section>
 
@@ -271,6 +287,25 @@
             </div>
         </div>
     </footer>
+
+
+
+
+        <!-- Modals -->
+    <div class="modal-wrapper">
+        <div class="modal" id="modal">
+            <div class="modal-container">
+                <div class="modal-budy-content">
+                    <div class="modal-button-close" id="modal-btn-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div>
+                        <p class="modal-budy-text">Спасибо за ваше сообщение,<br> я обязательно с вами свяжусь!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
